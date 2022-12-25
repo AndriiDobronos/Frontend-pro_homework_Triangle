@@ -23,7 +23,8 @@ if (dateOfUser) {
         const katetL = Number(dateForCalc[0])
         const katetR = Number(dateForCalc[1])
         const hypotenuse = Math.sqrt(katetL**2 + katetR**2)
-        const alterHypotenuse = Math.pow(katetL**2 + katetR**2,1/2)
+       /* const alterHypotenuse = Math.pow(katetL**2 + katetR**2,1/2)*/
+        const alterHypotenuse = (katetL**2 + katetR**2)**(1/2)
         alert(`Гіпотенуза равна: ${hypotenuse}\n
         Альтернативний розрахунок: ${alterHypotenuse}`)
     }
